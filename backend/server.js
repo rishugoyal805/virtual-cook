@@ -60,13 +60,14 @@ fs.readdirSync(routePath).forEach(file => {
   console.log(`Checking file: ${file}`);
 });
 // ✅ Serve frontend (Next.js build) from here if desired
-const frontendPath = path.resolve(__dirname, '../frontend/.next');
+const frontendPath = path.resolve(__dirname, '../frontend/out');
 
 app.use(express.static(frontendPath));
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(frontendPath, 'app/page.jsx')); // Use correct path if needed
-// });
+// Catch-all to serve React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/.next/server/app/page.jsx"));
+});
 
 app.listen(5000, () => {
   console.log('Server running on port 5000');

@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/rishugoyal805/virtual-cook#readme",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^9.2.0"
   }
 }

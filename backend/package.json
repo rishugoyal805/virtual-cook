@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MANYAGOEL123/VIRTUAL-Cook.git"
+    "url": "git+https://github.com/rishugoyal805/virtual-cook.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/MANYAGOEL123/VIRTUAL-Cook/issues"
+    "url": "https://github.com/rishugoyal805/virtual-cook/issues"
   },
-  "homepage": "https://github.com/MANYAGOEL123/VIRTUAL-Cook#readme",
+  "homepage": "https://github.com/rishugoyal805/virtual-cook#readme",
   "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -31,7 +31,8 @@
     "mongoose": "^8.16.1",
     "multer": "^2.0.1",
     "nodemon": "^3.1.10",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "virtual-cook": "file:.."
   },
   "devDependencies": {
     "vite": "^7.0.3"
